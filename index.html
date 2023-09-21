@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+    <!-- Animation AOS scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- My scripts -->
+    <script type="module" src="/js/imports.js" defer></script>
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="icon" type="image/jpg" href="../images/self.jpg" />
+    <!-- Hamburger menu -->
+    <link href="/scss/libraries/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRE6WN1W8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GRE6WN1W8Y');
+    </script>
+    <title>J. Oliver Coimbra | Developer portfolio</title>
+</head>
+
+<!-- Redirect site to index.html -->
+<script>
+    if (!window.location.href.includes("index.html")) {
+        window.location.replace("index.html");
+    }
+</script>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NR3DFJH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div id="content"></div>
+
+    <section id="landing-section">
+        <header-component></header-component>
+        <div class="container">
+            <div class="row">
+                <div class="col" id="col-left" data-aos="zoom-out-right">
+                    <h1 class="landing-title">Hey, I'm <span>Oliver</span> 👋</h1>
+                    <p class="landing-description">I'm a junior developer I have a strong passion for continuous learning, 
+                        especially when it comes to mastering new programming languages.
+                    </p>
+                    <div>
+                        <a href="#about" class="cta-btn-fill" style="margin: 0 10px 10px 0;">Learn more</a>
+                        <a href="#contact" class="cta-btn">Get in contact</a>
+                    </div>
+                </div>
+                <div class="col" data-aos="zoom-out-left"><img src="/images/illustration-landing.png"
+                        alt="illustration-landing" id="illustration-landing"></div>
+            </div>
+        </div>
+    </section>
+
+    <button class="scrollToTopBtn">☝️</button>
+
+    <section id="about">
+        <div class="self-shape-lg"></div>
+        <div class="self-shape-sm"></div>
+        <div class="container">
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col-4 text-center about-img-container">
+                    <img loading="lazy" src="/images/self.jpg" alt="bruno-figueiredo" id="self-img">
+                </div>
+                <div class="col-8">
+                    <h2 class="title-section">About me</h2>
+                    <p>Hello! I'm Oliver, a full-stack developer from Bolivia. I have a genuine fondness for developing 
+                        applications that are geared towards aiding and benefiting people.</p>
+
+                    <div class="tab">
+                        <button class="tablinks active" onclick="clickTab(event, 'skills', true)"><i class="fas fa-cogs"
+                                style="margin-right: 5px;"></i> Skills</button>
+                        <button class="tablinks" onclick="clickTab(event, 'education', true)"><i
+                                class="fas fa-university" style="margin-right: 5px;"></i> Education</button>
+                        <button class="tablinks" onclick="clickTab(event, 'hobbies', true)"><i class="fas fa-futbol"
+                                style="margin-right: 5px;"></i> Hobbies</button>
+                    </div>
+
+                    <div id="skills" class="tabcontent skills-tab" style="display: block;">
+                        <p>Front-end</p>
+                        <ul class="horizontal-list skills-li" id="skills-li-frontend"></ul>
+                        <p>Back-end</p>
+                        <ul class="horizontal-list skills-li" id="skills-li-backend"></ul>
+                        <p>Other</p>
+                        <ul class="horizontal-list skills-li" id="skills-li-other"></ul>
+                    </div>
+
+                    <div id="education" class="tabcontent">
+                        <div class="timeline" id="timeline">
+                        </div>
+                    </div>
+
+                    <div id="hobbies" class="tabcontent">
+                        <ul class="vertical-list" style="font-size: 20px; line-height: 1.7em;">
+                            <li>⚽ - watching football</li>
+                            <li>🍿 - watching movies</li>
+                            <li>🏊‍♂️ - swimming</li>
+                            <li>🧑‍💻 - coding</li>
+                            <li>🏋️ - gym</li>
+                            <li>👨‍👩‍👦‍👦 - family</li>
+                        </ul>
+                    </div>
+                    <div id="content-about">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container" data-aos="zoom-in-up">
+            <h2 class="title-section">Featured projects</h2>
+            <div id="projects-container"></div><br><br><br>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="title-section" data-aos="fade-right" data-aos-duration="1000">Experience</h2>
+            <div class="row">
+                <div class="col-4">
+                    <ul class="vertical-list vertical-tabs" id="tabs-experience" data-aos="fade-right">
+                        <li class="tablinks-vertical active-vertical" onclick="clickTab(event, 'kingbee', false)"
+                            id="kingbee">Freelancer
+                        </li>
+                        <li class="tablinks-vertical" onclick="clickTab(event, 'codeerschool', false)"
+                            id="codeerschool">Mertind Ltda
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="col-8" id="content-experience" data-aos="fade-right" data-aos-duration="1400"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col">
+                    <img loading="lazy" src="/images/contact-illustration.svg" id="contact-illustration"
+                        alt="contact-illustration">
+                </div>
+                <div class="col">
+                    <h2 class="title-section">Contact me</h2><br>
+                    <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p><br>
+                    <a href="mailto:olivercoimbraATgmailDOTcom" onclick="this.href=this.href
+                    .replace(/AT/,'@')
+                    .replace(/DOT/,'.')" class="cta-btn-uppercase">Mail me</a>
+                    <ul class="horizontal-list socials-links">
+                        <li><a href="https://www.linkedin.com/in/oliver-coimbra/" rel="noreferrer"
+                                target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/oliverSCZ" rel="noreferrer" target="_blank"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+    function clickTab(evt, name, horizontal) {
+        let i, tabcontent, tablinks;
+
+        /** RESET STYLING **/
+        if (horizontal) {
+            tabcontent = document.getElementsByClassName("tabcontent");
+            tablinks = document.getElementsByClassName("tablinks");
+
+            for (i = 0; i < tablinks.length; i++) {
+                tabcontent[i].style.display = "none";
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+                // Set display to block if the name passed is the same as the id of the element
+                if (tabcontent[i].id == name + "-content" || tabcontent[i].id == name) {
+                    tabcontent[i].style.display = "block";
+                }
+            }
+
+            evt.currentTarget.className += " active";
+        } else {
+            tabcontent = document.getElementsByClassName("tabcontent-vertical");
+            tablinks = document.getElementsByClassName("tablinks-vertical");
+
+            for (i = 0; i < tablinks.length; i++) {
+                tabcontent[i].style.display = "none";
+                tablinks[i].className = tablinks[i].className.replace(" active-vertical", "");
+
+                // Set display to block if the name passed is the same as the id of the element
+                if (tabcontent[i].id == name + "-content" || tabcontent[i].id == name) {
+                    tabcontent[i].style.display = "block";
+                }
+            }
+
+            evt.currentTarget.className += " active-vertical";
+        }
+    }
+</script>
+
+</html>
