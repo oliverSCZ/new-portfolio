@@ -23,7 +23,7 @@ let skillsData = [
 			},
 			{
 				icon:
-					'<img loading="lazy" src="../../images/bootstrap-fill.svg" alt="bootstrap logo" class="icon-skill-img"/>',
+					'<img loading="lazy" src="images/bootstrap-fill.svg" alt="bootstrap logo" class="icon-skill-img"/>',
 				tooltipText: 'Bootstrap'
 			}
 		]
