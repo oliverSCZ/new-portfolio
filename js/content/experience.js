@@ -5,7 +5,7 @@ const experienceData = [
 		id: generateId(),
 		elemId: 'kingbee-content',
 		company: 'Freelancer',
-		companyLogoUrl: '/images/kingbee_logo.jpg',
+		companyLogoUrl: 'images/kingbee_logo.jpg',
 		role: 'Junior Developer - Self-Employed',
 		date: 'Nov 2022 - Now',
 		roles: [
@@ -19,7 +19,7 @@ const experienceData = [
 		id: generateId(),
 		elemId: 'codeerschool-content',
 		company: 'Mertind Ltda.',
-		companyLogoUrl: '/images/codeerbedrijf_logo.jpg',
+		companyLogoUrl: 'images/codeerbedrijf_logo.jpg',
 		role: 'IT Manager - Help desk',
 		date: 'Nov 2009 - Jul 2021',
 		roles: [
