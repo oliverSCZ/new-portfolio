@@ -15,7 +15,7 @@ const projects = [
 		technologies: [ 'Ruby on Rails','Javascript', 'HTML/CSS', 'Tailwind CSS', 'React' ],
 		linkGithub: 'https://github.com/oliverSCZ/car-rental-frontend/',
 		linkWebsite: null,
-		img: '/images/projects/project-tsb.jpg',
+		img: 'images/projects/project-tsb.jpg',
 		directionContent: CLASS_RIGHT_CONTENT
 	},
 	{
@@ -26,7 +26,7 @@ const projects = [
 		technologies: [ 'Ruby on Rails', 'HTML/CSS', 'Tailwind CSS', 'PostgreSQL', 'Swagger' ],
 		linkGithub: 'https://github.com/oliverSCZ/budgetic-app',
 		linkWebsite: null,
-		img: '/images/projects/flks_website.jpg',
+		img: 'images/projects/flks_website.jpg',
 		directionContent: CLASS_LEFT_CONTENT
 	},
 	{
@@ -37,7 +37,7 @@ const projects = [
 		technologies: [ 'Webpack', 'CSS', 'Javascript', 'HTML/CSS', 'Jest' ],
 		linkGithub: 'https://github.com/fabianofrank/pokemon-api',
 		linkWebsite: 'https://fabianofrank.github.io/pokemon-api/dist/',
-		img: '/images/projects/opzeggenbij.jpg',
+		img: 'images/projects/opzeggenbij.jpg',
 		directionContent: CLASS_RIGHT_CONTENT
 	},
 	// {
