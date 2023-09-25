@@ -14,7 +14,7 @@ section {
     background: linear-gradient(-45deg, $very-light-grey, #ccc);
     background-size: 400% 400%;
     animation: gradient 110s ease infinite;
-    @include backgroundImageCover('/images/bg-boost-desktop.svg');
+    @include backgroundImageCover('images/bg-boost-desktop.svg');
 
     .row {
         display: table;
