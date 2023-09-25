@@ -1397,7 +1397,7 @@ section {
   background-size: 400% 400%;
   -webkit-animation: gradient 110s ease infinite;
           animation: gradient 110s ease infinite;
-  background-image: url("/images/bg-boost-desktop.svg");
+  background-image: url("images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60%;
