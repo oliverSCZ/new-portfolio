@@ -14,7 +14,7 @@ const projects = [
 			'A simple API application developed in RoR that displays a list of cars and allows users to add them to their favorites. The front end of this application is developed in React JS.',
 		technologies: [ 'Ruby on Rails','Javascript', 'HTML/CSS', 'Tailwind CSS', 'React' ],
 		linkGithub: 'https://github.com/oliverSCZ/car-rental-frontend/',
-		linkWebsite: null,
+		linkWebsite: 'https://prismatic-kringle-942d3e.netlify.app/',
 		img: 'images/projects/project-tsb.jpg',
 		directionContent: CLASS_RIGHT_CONTENT
 	},
