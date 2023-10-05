@@ -20,12 +20,12 @@ const projects = [
 	},
 	{
 		id: generateId(),
-		title: 'The Budgeting App',
+		title: 'Cryptocurrency Quoter',
 		description:
-			'A simple application developed in Ruby on Rails that helps you keep track of your expenses.',
-		technologies: [ 'Ruby on Rails', 'HTML/CSS', 'Tailwind CSS', 'PostgreSQL', 'Swagger' ],
-		linkGithub: 'https://github.com/oliverSCZ/budgetic-app',
-		linkWebsite: null,
+			'An application developed in React.js that provides actual currency in crypto through an API and customs hooks',
+		technologies: [ 'React.js', 'HTML/CSS', '@emotion Styled','Customs Hooks' ],
+		linkGithub: 'https://github.com/oliverSCZ/cryptocurrency-quoter',
+		linkWebsite: 'https://crypto-currency-quoter.netlify.app/',
 		img: 'images/projects/flks_website.jpg',
 		directionContent: CLASS_LEFT_CONTENT
 	},
